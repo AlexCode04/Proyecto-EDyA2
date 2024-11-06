@@ -7,6 +7,8 @@ dotenv.config();  // Configurar dotenv
 
 const JWT_SECRET = process.env.JWT_SECRET  // Definir una clave secreta (guárdala en las variables de entorno)
 
+console.log("JWT_SECRET:", JWT_SECRET);
+
 // Crear nuevo usuario
 export const registerUser = async (req, res) => {
   const { nombre, correo, contrasena, firebaseUid } = req.body;
