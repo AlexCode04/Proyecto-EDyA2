@@ -6,6 +6,9 @@
 .pnp.js
 
 
+# Agrega .env para que Git lo ignore
+.env
+
 /serviceAccount.json
 # /uploads
 /backend/uploads
