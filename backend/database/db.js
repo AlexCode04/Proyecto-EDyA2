@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const dbURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/eda';;
+const dbURI = 'mongodb+srv://angelrap1111:dQRUrdzzdRZR21NR@eda2.tkilr.mongodb.net/?retryWrites=true&w=majority&appName=EDA2';
 
 const connectDB = async () => {
     try {
