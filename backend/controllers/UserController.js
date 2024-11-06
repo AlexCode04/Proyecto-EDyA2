@@ -3,7 +3,7 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';  // Importamos jsonwebtoken
 import dotenv from 'dotenv';  // Importamos dotenv para acceder a las variables de entorno
 
-
+dotenv.config();  // Configurar dotenv
 
 const JWT_SECRET = process.env.JWT_SECRET  // Definir una clave secreta (guárdala en las variables de entorno)
 
