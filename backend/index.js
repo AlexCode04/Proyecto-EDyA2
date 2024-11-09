@@ -13,7 +13,12 @@ const __dirname = path.dirname(__filename);
 connectDB().then(() => console.log("Database connected")).catch((error) => console.error("Database connection error:", error));
 
 // Middlewares
-app.use(cors());
+app.use(cors(
+    {
+        origin: '*'
+    }
+
+));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
